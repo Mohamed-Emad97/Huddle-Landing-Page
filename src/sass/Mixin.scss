@@ -1,0 +1,12 @@
+@use "./Variblies.scss" as *;
+
+@mixin btnMain () {
+    background-color: $Pink;
+    color: $Very-Pale-Cyan;
+    width: 50%;
+    font-weight: 700;
+    transition: background-color ease 1s;
+    &:hover{
+        background-color: rgba($Pink, 0.7);
+    }
+}

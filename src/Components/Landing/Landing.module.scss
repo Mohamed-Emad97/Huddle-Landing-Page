@@ -1,0 +1,28 @@
+//Import Files
+@use "../../sass/Variblies.scss" as *;
+@use "../../sass/Mixin.scss" as *;
+
+
+//Rules
+#landing{
+    background-color: $Very-Pale-Cyan;
+    background-image: url(../../assets/images/bg-hero-desktop.svg);
+    background-size: cover;
+    height: 100vh;
+    .caption{
+        h1{
+            color: $Very-Dark-Cyan;
+            line-height: 1.5;
+        }
+        p{
+            color: $Very-Dark-Cyan;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width: 676px) {
+    #landing{
+        height: auto;
+    }
+}

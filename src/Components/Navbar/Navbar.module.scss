@@ -1,0 +1,24 @@
+@use "../../sass/Mixin.scss" as *;
+@use "../../sass/Variblies.scss" as *;
+
+
+.Btn{
+    .btnMain{
+        background-color: #fff;
+        color: $Very-Dark-Cyan;
+        font-weight: 700;
+        padding: 1.5rem 2rem;
+        transition: background-color ease 1s;
+        &:hover{
+            background-color: rgba(#fff, 0.6);
+        }
+    }
+}
+
+@media (max-width: 676px) {
+    .Btn{
+        .btnMain{
+            padding: 0.5rem;
+        }
+    }
+}

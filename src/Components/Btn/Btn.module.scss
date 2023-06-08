@@ -1,0 +1,8 @@
+@use "../../sass/Mixin.scss" as *;
+@use "../../sass/Variblies.scss" as *;
+
+.Btn{
+    .btnMain{
+        @include btnMain();
+    }
+}

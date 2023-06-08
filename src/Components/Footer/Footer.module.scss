@@ -1,0 +1,67 @@
+@use "../../sass/Variblies.scss" as *;
+
+//Rules
+footer{
+    background-color: $Very-Dark-Cyan;
+    .image{
+        margin: 6rem 0;
+    }
+    ul{
+        a{
+            text-decoration: none;
+            color: $Very-Pale-Cyan;
+            transition: text-decoration ease 1s;
+            transition: color ease 1s;
+            &:hover{
+                color: $Very-Pale-Cyan;
+                text-decoration: underline;
+            }
+        }
+    }
+    .detailed{
+        li{
+            margin-bottom: 1rem;
+            span{
+                color: $Very-Pale-Cyan;
+                font-size: $font-size;
+                font-weight: 400;
+            }
+            .icon{
+                margin-right: 1rem;
+            }
+            .txt{
+                white-space: pre-line;
+            }
+        }
+    }
+    .social{
+        li{
+            a{
+                border: 1px solid $Very-Pale-Cyan;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    p{
+        color: $Very-Pale-Cyan;
+        text-align: end;
+    }
+}
+
+@media (max-width: 676px) {
+    footer{
+        .image{
+            img{
+                width: 50% !important;
+            }
+        }
+        ul, .image, p{
+            text-align: center;
+        }
+        .social{
+            justify-content: center;
+        }
+    }
+}

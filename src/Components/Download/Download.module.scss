@@ -1,0 +1,13 @@
+@use "../../sass/Variblies.scss" as *;
+
+//Rules
+h2{
+    color: $Very-Dark-Cyan;
+    font-weight: 600;
+}
+
+@media (max-width: 676px) {
+    .box{
+        width: 90%;
+    }
+}
